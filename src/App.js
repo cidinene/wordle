@@ -7,12 +7,14 @@ const replaceAt=function(cadena, index, char) {
   a[index] = char;
   return a.join("");
 }
-const solution ='avion';
+export const solution ='CLASE';
 
 
 function App() {
 
   const [currentAttempt, setCurrentAttempt] = useState(1);
+  const [messageWinner, setMessageWinner] = useState("");
+
 
   const guesses = ["     ", "     ","     " , "     ", "     "];
   const handleSquareChange=( parameters) =>
@@ -30,7 +32,24 @@ function App() {
       }
       if (isAttempComplete) 
         {
-          setCurrentAttempt(currentAttempt+1);
+          if(guesses[parameters.row-1] == solution)
+          {
+            setMessageWinner("CONGRATULATIONS");
+            setCurrentAttempt(10); 
+          }
+          else 
+          {
+            if (currentAttempt<5) 
+              {
+                setCurrentAttempt(currentAttempt+1);
+               
+              } 
+              else
+              {
+                setMessageWinner("Game Over");
+                setCurrentAttempt(10); 
+              }
+          }
         } 
     }
 
@@ -39,6 +58,9 @@ function App() {
       <header className="App-header">
         <p>
           WORDLE
+        </p>
+        <p>
+          {messageWinner}
         </p>
       </header>
      
@@ -86,3 +108,4 @@ function App() {
 }
 
 export default App;
+
