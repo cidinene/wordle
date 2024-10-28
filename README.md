@@ -1,3 +1,4 @@
+Wordle is our first
 # Launching Wordle First Tutorial With React
 
 In the project directory, you can execute:
