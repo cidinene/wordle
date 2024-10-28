@@ -1,10 +1,10 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+# Launching Wordle First Tutorial With React
 
 In the project directory, you can execute:
+
+### `npm install`
+
+This will download all available node modules
 
 ### `npm start`
 
