@@ -1,7 +1,7 @@
 
 import './Square.css';
 import { useState,useEffect } from 'react'
-import { solution } from './App.js'
+import { solution } from './App_wordle.js'
 
 
 function Square({ row, column, attempt, textUpdate}) {
@@ -27,7 +27,7 @@ function Square({ row, column, attempt, textUpdate}) {
           else {
           if(row<attempt && solution.indexOf(letter)>=0)
           {
-            setBackgroundCellColor('cuadradoamarillos');
+            setBackgroundCellColor('cuadradoamarillo');
           }
         }
            
