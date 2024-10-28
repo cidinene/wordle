@@ -1,4 +1,12 @@
 Wordle is our first
+
+# Wordle First Tutorial With React
+
+This is a project to create our first interface with React.
+
+The projets aims to creat a simple Wordle interface where user has 5 attemps to guess the chosen word
+
+
 # Launching Wordle First Tutorial With React
 
 In the project directory, you can execute:
