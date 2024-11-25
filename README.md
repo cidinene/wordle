@@ -27,6 +27,7 @@ npm install .
 
 This will download all available node modules
 
+Now you can launch the app with npm start
 
 `npm start`
 
